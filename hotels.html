@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxury Stays - Hotels</title>
+    <link rel="stylesheet" href="scss/style.css">
+</head>
+<body data-page="hotels">
+
+    <nav class="navbar">
+        <div class="logo">🛏️ Luxury<span>Stays</span></div>
+        <div class="nav-right">
+          <button id="theme-toggle" class="theme-toggle-btn" type="button">🌙</button>
+            <div class="nav-links" id="nav-links">
+                <a href="index.html">Home</a>
+                <a href="rooms.html">Rooms</a>
+                <a href="hotels.html" class="active">Hotels</a>
+                <a href="booked.html">Booked Rooms</a>
+            </div>
+            <button class="burger-menu" id="burger-btn">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <section class="hero-banner" id="hero-bg">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title" id="hero-title">Five Star Hotels</h1>
+            <p class="hero-desc">And we like to keep it that way!</p>
+            <a href="hotels.html" class="hero-btn">SEE HOTELS</a>
+        </div>
+    </section>
+
+    <div class="section-divider">
+        <span>Our Partner Hotels</span>
+    </div>
+
+    <main class="container">
+        <section class="filter-section" style="max-width: 300px; margin: 0 auto 25px auto;">
+            <label>Filter by City</label>
+            <select id="city-filter">
+                <option value="all">All Cities</option>
+                <option value="Tbilisi">Tbilisi</option>
+                <option value="Batumi">Batumi</option>
+                <option value="Kutaisi">Kutaisi</option>
+            </select>
+        </section>
+
+        <div class="grid-container" id="hotels-container">
+            <div class="loading">Loading hotels...</div>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-content">
+            <p>&copy; 2026 IT Academy Step. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+</html>

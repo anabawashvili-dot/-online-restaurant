@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxury Stays - Rooms</title>
+    <link rel="icon" href="data:,">
+    <link rel="stylesheet" href="scss/style.css"> 
+</head>
+<body data-page="rooms">
+
+    <nav class="navbar">
+        <div class="logo">🛏️ Luxury<span>Stays</span></div>
+        <div class="nav-right">        
+       <button id="theme-toggle" class="theme-toggle-btn" type="button">🌙</button>
+            <div class="nav-links" id="nav-links">
+                <a href="index.html">Home</a>
+                <a href="rooms.html" class="active">Rooms</a>
+                <a href="hotels.html">Hotels</a>
+                <a href="booked.html">Booked Rooms</a>
+            </div>
+            <button class="burger-menu" id="burger-btn" type="button" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <section class="hero-banner" id="hero-bg">
+        <div class="hero-overlay"></div>
+        <div class="hero-content"> 
+            <h1 class="hero-title" id="hero-title">Find Your Perfect Room</h1>
+            <p class="hero-desc">Luxury and comfort tailored just for you.</p>
+        </div>                                    
+
+
+
+
+    </section>
+
+    <div class="section-divider">
+        <span>Available Luxury Rooms</span>
+    </div>
+
+    <main class="container">
+        <section class="filter-section">
+            <div class="filter-group">
+                <label for="type-filter">Room Type</label>
+                <select id="type-filter">
+                    <option value="all">All Types</option>
+                    <option value="Single Room">Single Room</option>
+                    <option value="Double Room">Double Room</option>
+                    <option value="Deluxe Room">Deluxe Room</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label for="min-price">Min Price</label>
+                <input type="number" id="min-price" placeholder="Min $">
+            </div>
+            <div class="filter-group">
+                <label for="max-price">Max Price</label>
+                <input type="number" id="max-price" placeholder="Max $">
+            </div>
+            <div class="filter-group">
+                <label for="price-sort">Sort By Price</label>
+                <select id="price-sort">
+                    <option value="none">Default</option>
+                    <option value="low">Low to High</option>
+                    <option value="high">High to Low</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label for="check-in">Check-In</label>
+                <input type="date" id="check-in">
+            </div>
+            <div class="filter-group">
+                <label for="check-out">Check-Out</label>
+                <input type="date" id="check-out">
+            </div>
+            <button id="reset-filters" type="button" class="btn-reset">Reset</button>
+        </section>
+
+        <div class="grid-container" id="rooms-container">
+            <div class="loading">Loading rooms...</div>
+        </div>
+    </main>
+
+    <div class="modal" id="booking-modal" style="display: none;">
+        <div class="modal-content">
+            <h3>Book Your Stay</h3>
+            <input type="text" id="guest-name" placeholder="Your Full Name">
+            <input type="text" id="guest-phone" placeholder="Phone Number (+995...)">
+            <div class="modal-actions">
+                <button type="button" id="confirm-booking-btn" class="btn-confirm">Confirm Booking</button>
+                <button type="button" id="close-modal-btn" class="btn-cancel">Cancel</button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="main-footer">
+        <div class="footer-content">
+            <p>&copy; 2026 IT Academy Step All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+</html>  
+
+
+
+
+
+
+
+

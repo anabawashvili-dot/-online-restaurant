@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxury Stays - My Bookings</title>
+    <link rel="stylesheet" href="scss/style.css">
+</head>
+<body data-page="booked">
+
+    <nav class="navbar">
+        <div class="logo">🛏️ Luxury<span>Stays</span></div>
+        <div class="nav-right">
+            <button id="theme-toggle" class="theme-toggle-btn" type="button">🌙</button>
+            <div class="nav-links" id="nav-links">
+                <a href="index.html">Home</a>
+                <a href="rooms.html">Rooms</a>
+                <a href="hotels.html">Hotels</a>
+                <a href="booked.html" class="active">Booked Rooms</a>
+            </div>
+            <button class="burger-menu" id="burger-btn" type="button">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <section class="hero-banner" id="hero-bg">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title" id="hero-title">Your Bookings</h1>
+            <p class="hero-desc">Manage your active reservations with ease.</p>
+            <a href="rooms.html" class="hero-btn">BOOK A ROOM</a>
+        </div>
+    </section>
+
+    <div class="section-divider">
+        <span>Your Active Bookings</span>
+    </div>
+
+    <main class="container">
+        <div class="table-responsive">
+            <table class="booking-table">
+                <thead>
+                    <tr>
+                        <th>Hotel</th>
+                        <th>Room</th>
+                        <th>Customer</th>
+                        <th>Dates</th>
+                        <th>Price</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="booked-table-body">
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-content">
+            <p>&copy; 2026 IT Academy Step. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
